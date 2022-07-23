@@ -4,9 +4,7 @@ Release:        1
 Summary:        The SEALFAIL security profile for OpenSCAP.
 License:        GPLv3
 
-Source0: ssg-sealfail9-ds.xml
-Source1: tailoring-xccdf.xml
-
+Source0: 	%{name}.tar.xz
 
 BuildArch:      noarch
 
