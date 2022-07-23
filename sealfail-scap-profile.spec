@@ -12,21 +12,16 @@ BuildArch:      noarch
 The SEALFAIL security profile for OpenSCAP.
 
 %prep
-cp %SOURCE0 .
-cp %SOURCE1 .
-
+%setup -q -n %{name}
 
 %build
 
 %install
-mkdir -p $RPM_BUILD_ROOT/%{_datadir}/xml/scap/%{name}
-cp ssg-sealfail9-ds.xml $RPM_BUILD_ROOT/%{_datadir}/xml/scap/%{name}/
-cp tailoring-xccdf.xml $RPM_BUILD_ROOT/%{_datadir}/xml/scap/%{name}/
-
+mkdir -p %{buildroot}/usr/share/xml/scap/sealfail/
+install -m 0644 sealfail.xml %{buildroot}/usr/share/xml/scap/sealfail/sealfail.xml
 
 %files
-%{_datadir}/xml/scap/%{name}/ssg-sealfail9-ds.xml
-%{_datadir}/xml/scap/%{name}/tailoring-xccdf.xml
+%attr(0644,root,root) /usr/share/xml/scap/sealfail/sealfail.xml
 
 
 %changelog

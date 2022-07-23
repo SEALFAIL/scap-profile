@@ -1,1 +1,57 @@
 ===Buildlog===
+setting SOURCE_DATE_EPOCH=1658534400
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.z1mrUr
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd /root/rpmbuild/BUILD
++ rm -rf sealfail-scap-profile
++ /usr/bin/xz -dc /root/rpmbuild/SOURCES/sealfail-scap-profile.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd sealfail-scap-profile
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.HWLw6P
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd sealfail-scap-profile
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.MtEBM2
++ umask 022
++ cd /root/rpmbuild/BUILD
++ '[' /root/rpmbuild/BUILDROOT/sealfail-scap-profile-1-1.x86_64 '!=' / ']'
++ rm -rf /root/rpmbuild/BUILDROOT/sealfail-scap-profile-1-1.x86_64
+++ dirname /root/rpmbuild/BUILDROOT/sealfail-scap-profile-1-1.x86_64
++ mkdir -p /root/rpmbuild/BUILDROOT
++ mkdir /root/rpmbuild/BUILDROOT/sealfail-scap-profile-1-1.x86_64
++ cd sealfail-scap-profile
++ mkdir -p /root/rpmbuild/BUILDROOT/sealfail-scap-profile-1-1.x86_64/usr/share/xml/scap/sealfail/
++ install -m 0644 sealfail.xml /root/rpmbuild/BUILDROOT/sealfail-scap-profile-1-1.x86_64/usr/share/xml/scap/sealfail/sealfail.xml
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 1-1 --unique-debug-suffix -1-1.x86_64 --unique-debug-src-base sealfail-scap-profile-1-1.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /root/rpmbuild/BUILD/sealfail-scap-profile
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-ldconfig
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/redhat/brp-strip-lto /usr/bin/strip
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/redhat/brp-python-bytecompile '' 1 0
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Processing files: sealfail-scap-profile-1-1.noarch
+Provides: sealfail-scap-profile = 1-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/sealfail-scap-profile-1-1.x86_64
+Wrote: /root/rpmbuild/SRPMS/sealfail-scap-profile-1-1.src.rpm
+Wrote: /root/rpmbuild/RPMS/noarch/sealfail-scap-profile-1-1.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.glrdrG
++ umask 022
++ cd /root/rpmbuild/BUILD
++ cd sealfail-scap-profile
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/sealfail-scap-profile-1-1.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0

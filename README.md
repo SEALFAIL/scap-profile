@@ -12,15 +12,15 @@ The RPM build process requires `rpm-build`. The script has only been tested on *
 
 Build the RPM with the following command:
 
-`$ ./build.sh`
+`# ./build.sh`
 
 Install the RPM with the following command:
 
-`$ rpm -i ~/rpmbuild/RPMS/noarch/sealfail-scap-profile-*.rpm`
+`# rpm -i ~/rpmbuild/RPMS/noarch/sealfail-scap-profile-*.rpm`
 
 Use the profile with the following command:
 
-`$ oscap xccdf eval --profile xccdf_org.sealfail_profile_workstation /usr/share/xml/scap/ssg-sealfail/tailoring-xccdf.xml`
+`# oscap xccdf eval --profile xccdf_org.sealfail_profile_workstation /usr/share/xml/scap/sealfail/sealfail.xml`
 
 ## Contributing
 
