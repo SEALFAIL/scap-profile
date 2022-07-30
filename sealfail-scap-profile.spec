@@ -1,5 +1,5 @@
 Name:           sealfail-scap-profile
-Version:        1
+Version:        1.1
 Release:        1
 Summary:        The SEALFAIL security profile for OpenSCAP.
 License:        GPLv3
@@ -25,5 +25,8 @@ install -m 0644 sealfail.xml %{buildroot}/usr/share/xml/scap/sealfail/sealfail.x
 
 
 %changelog
+* Sat Jul 30 2022 Sasha Emily Chelsea Murgia - 1.1-1
+- Removed unused rules
+- Changed profile description
 * Sat Jul 23 2022 Sasha Emily Chelsea Murgia - 1-1
 - Initial release
