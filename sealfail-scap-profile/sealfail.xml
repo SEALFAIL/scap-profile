@@ -104,10 +104,6 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_auditd_name_format" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_auditd_overflow_action" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_bios_enable_execution_restrictions" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_client_only" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_no_chronyc_network" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_or_ntpd_set_maxpoll" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_server_directive" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_configure_bind_crypto_policy" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_configure_crypto_policy" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_configure_firewalld_ports" selected="true"/>
@@ -116,7 +112,6 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_configure_openssl_crypto_policy" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_configure_openssl_tls_crypto_policy" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_configure_ssh_crypto_policy" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_configure_usbguard_auditbackend" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_coredump_disable_backtraces" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_coredump_disable_storage" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_dconf_gnome_disable_ctrlaltdel_reboot" selected="true"/>
@@ -146,8 +141,6 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_etc_audit_rulesd" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_home_directories" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_library_dirs" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_sshd_private_key" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_sshd_pub_key" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_ungroupowned" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_var_log" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_var_log_audit" selected="true"/>
@@ -205,7 +198,6 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_firewalld_installed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_gssproxy_removed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_iprutils_removed" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_openssh-server_installed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_policycoreutils_installed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_rng-tools_installed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_rsh-server_removed" selected="true"/>
@@ -215,7 +207,6 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_telnet-server_removed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_tftp-server_removed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_tuned_removed" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_usbguard_installed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_vsftpd_removed" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_postfix_client_configure_mail_alias" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_postfix_prevent_unrestricted_relay" selected="true"/>
@@ -235,28 +226,9 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_debug-shell_disabled" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_fapolicyd_enabled" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_firewalld_enabled" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_kdump_disabled" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_rngd_enabled" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_rsyslog_enabled" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_sshd_enabled" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_systemd-coredump_disabled" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_usbguard_enabled" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_compression" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_empty_passwords" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_gssapi_auth" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_kerb_auth" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_root_login" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_user_known_hosts" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_x11_forwarding" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_do_not_permit_user_env" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_strictmodes" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_warning_banner" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_print_last_log" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_rekey_limit" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_x11_use_localhost" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sssd_certificate_verification" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sssd_enable_certmap" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sssd_offline_cred_expiration" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_sudo_remove_no_authenticate" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_sudo_remove_nopasswd" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_sudo_require_reauthentication" selected="true"/>
@@ -289,7 +261,6 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_redirects" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_source_route" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_sysctl_user_max_user_namespaces" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_usbguard_generate_policy" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_wireless_disable_interfaces" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_gnome_network_settings" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_gnome_remote_access_settings" selected="false"/>
@@ -394,27 +365,9 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_group_configure_exports_restrictively" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_export_filesystems_read_only" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_use_acl_enforce_auth_restrictions" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_inetd_and_xinetd" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_nis" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_talk" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_printing" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_configure_printing" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_proxy" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_disabling_squid" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_radius" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_routing" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_disabling_quagga" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_smb" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_configuring_samba" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_smb_disable_printing" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_smb_restrict_file_sharing" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_disabling_samba" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_snmp" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_disabling_snmp_service" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_snmp_configure_server" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_ssh_client" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_sshd_strengthen_firewall" selected="false"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_group_sssd-ldap" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_xwindows" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_disabling_xwindows" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_intro" selected="false"/>
@@ -561,7 +514,6 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_securetty_root_login_console_only" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_accounts_polyinstantiated_var_tmp" selected="true"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_accounts_polyinstantiated_tmp" selected="true"/>
-    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sssd_enable_smartcards" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_encrypt_partitions" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_disk_partitioning" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_group_updating" selected="false"/>
@@ -587,6 +539,108 @@
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permission_user_init_files" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_auditd_audispd_configure_sufficiently_large_partition" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_auditd_audispd_disk_full_action" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_kdump_disabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_base" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_ntp" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_ntpd_specify_remote_server" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_ntpd_specify_multiple_servers" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_specify_remote_server" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_server_directive" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_run_as_chrony_user" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_or_ntpd_set_maxpoll" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_no_chronyc_network" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_chronyd_client_only" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_ntpd_enabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_ntp_enabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_chronyd_enabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_ntp_installed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_chrony_installed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_talk-server_removed" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_talk" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_xinetd_removed" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_inetd_and_xinetd" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_ypbind_removed" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_nis" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_cups_disabled" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_printing" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_squid_removed" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_disabling_squid" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_proxy" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_freeradius_removed" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_radius" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_quagga_removed" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_disabling_quagga" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_routing" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_samba-common_installed" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_configuring_samba" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_smb" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_smb_disable_printing" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_smb_restrict_file_sharing" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_net-snmp_removed" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_disabling_snmp_service" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_snmp" selected="true"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_snmpd_no_rwusers" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_snmp_configure_server" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_openssh-server_installed" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_sshd_enabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_sshd_private_key" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_file_permissions_sshd_pub_key" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_ssh_server" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_sshd_strengthen_firewall" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_x11_use_localhost" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_use_strong_rng" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_use_priv_separation" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_use_directory_configuration" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_maxstartups" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_max_sessions" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_max_auth_tries" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_loglevel_verbose" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_loglevel_info" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_login_grace_time" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_keepalive_0" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_keepalive" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_set_idle_timeout" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_rekey_limit" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_print_last_log" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_limit_user_access" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_x11_forwarding" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_warning_banner_net" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_warning_banner" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_strictmodes" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_pubkey_auth" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_pam" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_enable_gssapi_auth" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_do_not_permit_user_env" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_x11_forwarding" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_user_known_hosts" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_tcp_forwarding" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_root_password_login" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_root_login" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_rhosts_rsa" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_rhosts" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_pubkey_auth" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_kerb_auth" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_gssapi_auth" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_empty_passwords" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_disable_compression" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sshd_allow_only_protocol2" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_firewalld_sshd_port_enabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_disable_host_auth" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_ssh" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_sssd" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_sssd-ldap" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sssd_offline_cred_expiration" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sssd_enable_smartcards" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sssd_enable_certmap" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_sssd_certificate_verification" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_group_usbguard" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_usbguard_generate_policy" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_usbguard_allow_hub" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_usbguard_allow_hid_and_hub" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_usbguard_allow_hid" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_configure_usbguard_auditbackend" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_service_usbguard_enabled" selected="false"/>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_package_usbguard_installed" selected="false"/>
     <xccdf:refine-value idref="xccdf_org.ssgproject.content_value_var_rekey_limit_size" selector="1G"/>
     <xccdf:refine-value idref="xccdf_org.ssgproject.content_value_var_rekey_limit_time" selector="1hour"/>
     <xccdf:refine-value idref="xccdf_org.ssgproject.content_value_var_accounts_user_umask" selector="077"/>
